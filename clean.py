@@ -27,7 +27,7 @@ for file in mesh_files:
     ms.load_new_mesh(file)
 
     # Simplify mesh
-    ms.meshing_decimation_quadric_edge_collapse(targetfacenum=5000)
+    ms.meshing_decimation_quadric_edge_collapse(targetfacenum=10000)
 
     # Save simplified mesh
     ms.save_current_mesh(file)
